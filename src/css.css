@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: goldenrod;
+}
+
+header{
+    background-color: #F8F9FA;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vermelho{
+    color: red;
+}
+
+main{
+    background-color: blueviolet;
+    height: 535px;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+}
+
+.lateralEsquerda{
+    margin-left: 40px;
+}
+
+.lateralDireita{
+    background-color: chocolate;
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 100%;
+    width: 560px;
+    left: 680px;
+    top: 122px;
+    border-radius: 0px;
+
+}
+
+form{
+    background-color: #E9ECEF;
+    height: 225px;
+    width: 100%;
+    border-radius: 4px;    
+}
+
+#descrisao{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: 320px;
+    border-radius: 8px;
+    /* padding: 0px, 16px, 0px, 16px; */
+
+}
+
+#caixaInferior{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#selecionarCategoria{
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+#btnEnviar{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 48px;
+    width: 314px;
+    border-radius: 8px;
+    background-color: #FD377E;
+    color: white;
+}
+
+.totalMoney{
+    margin-top: 16px;
+    background-color: #E9ECEF;
+    height: 96px;
+    width: 360px;
+    border-radius: 4px;    
+}
+
+.divSuperiorTotalMoney{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.paragrafoInferiorTotalMoney{
+    margin-left: 24px;
+}
+
+.filtroCategoria{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.BtnDefiltro{
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 30px;
+    width: 85px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.conteinerCards{
+    background-color: purple;
+    display: flex;
+    height: 87px;
+    width: 560px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.conteinerCards-lateralDireita{
+    display: flex;
+    background-color: black;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.deletarCard{
+    height: 22px;
+    width: 22px;
+    border-radius: 2.461538553237915px;
+    cursor: pointer;
+
+}
+
+.cardDescrisao{
+    background-color: #FD377E;
+
+}
+
+.cardCategoria{
+    margin-top: 20px;
+    background-color: yellowgreen;
+    max-width: 62px;
+}
+
+.cardValor{
+    background-color: aquamarine;
+    height: 22px;
+}
