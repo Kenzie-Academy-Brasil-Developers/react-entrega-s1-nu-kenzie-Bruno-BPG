@@ -5,26 +5,38 @@
 }
 
 body{
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
+    background-color: white;
 }
 
 header{
     background-color: #F8F9FA;
     height: 50px;
     margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 24px;
+    color: #212529;
 }
 
 .vermelho{
+    /* margin-left: 20px; */
     color: red;
 }
 
+.btnInicio{
+    height: 30px;
+    width: 85px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
 main{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 535px;
     display: flex;
     /* justify-content: space-around; */
@@ -32,12 +44,14 @@ main{
 }
 
 .lateralEsquerda{
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    margin-left: 100px;
 }
 
 .lateralDireita{
-    background-color: chocolate;
-    margin-right: 40px;
+    /* background-color: chocolate; */
+    /* margin-right: 40px; */
+    margin-right: 100px;
     margin-left: 40px;
     height: 100%;
     width: 560px;
@@ -48,10 +62,22 @@ main{
 }
 
 form{
-    background-color: #E9ECEF;
+    /* background-color: #E9ECEF; */
+    background-color: #F8F9FA;
     height: 225px;
     width: 100%;
     border-radius: 4px;    
+}
+
+.divIntermediariaForm{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.ajustarMargin{
+margin-left: 20px;
 }
 
 #descrisao{
@@ -90,7 +116,7 @@ form{
 
 .totalMoney{
     margin-top: 16px;
-    background-color: #E9ECEF;
+    background-color: #F8F9FA;
     height: 96px;
     width: 360px;
     border-radius: 4px;    
@@ -126,7 +152,8 @@ form{
 }
 
 .conteinerCards{
-    background-color: purple;
+    /* background-color: purple; */
+    background-color: #F8F9FA;
     display: flex;
     height: 87px;
     width: 560px;
@@ -137,7 +164,7 @@ form{
 
 .conteinerCards-lateralDireita{
     display: flex;
-    background-color: black;
+    /* background-color: black; */
     width: 150px;
     justify-content: space-between;
 }
@@ -151,17 +178,18 @@ form{
 }
 
 .cardDescrisao{
-    background-color: #FD377E;
+    /* background-color: #FD377E; */
+    background-color: white;
 
 }
 
 .cardCategoria{
     margin-top: 20px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     max-width: 62px;
 }
 
 .cardValor{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: 22px;
 }

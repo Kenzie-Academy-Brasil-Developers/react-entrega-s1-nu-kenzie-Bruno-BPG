@@ -7,9 +7,9 @@ import { useState } from "react"
 function App() {
 
   const [count, setCount] = useState([
-    { descrisao: "investimento - conpraDaMoto", categoria: "Despesa", valor: 5000 },
-    { descrisao: "salario- mes maio", categoria: "Entrada", valor: 6500 },
-    { descrisao: "contaDeluz - mes maio", categoria: "Despesa", valor: 150 },
+    // { descrisao: "investimento - conpraDaMoto", categoria: "Despesa", valor: 5000 },
+    // { descrisao: "salario- mes maio", categoria: "Entrada", valor: 6500 },
+    // { descrisao: "contaDeluz - mes maio", categoria: "Despesa", valor: 150 },
 ]
   );
 
@@ -25,7 +25,28 @@ function App() {
   const [categoria, setCategoria] = useState ("Entrada")
   const [valor, setValor] = useState (0)
   
- 
+// console.log(count.map((iten)=> {
+//   return iten.valor
+// }))
+
+function calcularTotal(){
+
+const Despesa = count.filter((iten)=> {
+  return iten.categoria === "Despesa"
+})
+
+const Entrada = count.filter((iten)=> {
+  return iten.categoria === "Entrada"
+})
+
+
+const totalDespesas = Entrada.reduce((acumulador, item) => acumulador + item.valor , 0)
+const totalGanhos = Despesa.reduce((acumulador, item) => acumulador + item.valor , 0)
+
+return totalDespesas - totalGanhos
+}
+
+// this.livros.reduce((acumulador, livro) => acumulador + livro.numeroDePaginas , 0)
 
 
 
@@ -45,14 +66,27 @@ function App() {
        
         <div className='conteinerCards-lateralDireita'>
         <p className='cardValor'>{"R$ "+iten.valor}</p>
-        <button className='deletarCard'>&#128465;</button>    
+        <button id={index} onClick={()=>{deletarItenCarrinho(iten.id)}} className='deletarCard'>&#128465;</button>    
         </div>
   
         </div> 
         </div>
       })
-  
+
       return MostrarCards
+    }
+
+    function deletarItenCarrinho(indx){
+
+      const filter = count.filter((iten)=>{
+        return iten.id !== indx
+        })
+
+        setCount(filter)
+        setFiltro(filter)
+
+        console.log(indx)
+  
     }
 
     function henderFilter (tipo){
@@ -69,9 +103,10 @@ function App() {
 
     function criarTransacao(event){
       event.preventDefault()
-
-      setCount([...count, { descrisao: descrisao, categoria: categoria, valor: valor }])
-      setFiltro([...count, { descrisao: descrisao, categoria: categoria, valor: valor }])
+      
+      setCount([...count, { id: Math.random(), descrisao: descrisao, categoria: categoria, valor: parseInt(valor) }])
+      setFiltro([...count, { id: Math.random(), descrisao: descrisao, categoria: categoria, valor: parseInt(valor) }])
+      // calcularTotal()
       // console.log(descrisao)
     }
 
@@ -79,18 +114,21 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p><span className='vermelho'>Nu</span> kenzie</p>
-        <button>inicio</button>
+        <button className='btnInicio'>inicio</button>
       </header>
       <main>
 
       <section className='lateralEsquerda'>
 
         <form onSubmit={(event) => criarTransacao(event)}>
-          <p>descrisao</p>
+          <p className='ajustarMargin'>descrisao</p>
           <input id='descrisao' onChange={(event) => setDescrisao(event.target.value)}></input>
           <br></br>
-          <span>Ex: Compra de roupas</span>
-          <p>Valor</p>
+          <span className='ajustarMargin'>Ex: Compra de roupas</span>
+
+          <div className='divIntermediariaForm'>
+          <p>Valor</p> <p>Tipo de valor</p>
+          </div>
 
           <div id='caixaInferior'>
           <input id='digitaPreco' onChange={(event) => setValor(event.target.value)}></input>
@@ -112,8 +150,9 @@ function App() {
 
         <div className='divSuperiorTotalMoney'>
           <p>Valor total:</p>
-          <span>$ {"valorTotal"}</span>
+          <span>$ {calcularTotal()}</span>
         </div>
+        
 
         <p className='paragrafoInferiorTotalMoney'>O valor se refere ao saldo</p>
         </div>
