@@ -1,5 +1,4 @@
-import "./formulario.css"; 
-
+import "./formulario.css";
 
 const formulario = ({
   criarTransacao,
