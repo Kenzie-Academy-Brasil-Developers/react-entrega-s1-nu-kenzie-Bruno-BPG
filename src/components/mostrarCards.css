@@ -1,0 +1,37 @@
+.conteinerCards{
+    background-color: #F8F9FA;
+    display: flex;
+    height: 87px;
+    width: 560px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.conteinerCards-lateralDireita{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.deletarCard{
+    height: 22px;
+    width: 22px;
+    border-radius: 2.461538553237915px;
+    cursor: pointer;
+
+}
+
+.cardDescrisao{
+    background-color: white;
+
+}
+
+.cardCategoria{
+    margin-top: 20px;
+    max-width: 62px;
+}
+
+.cardValor{
+    height: 22px;
+}

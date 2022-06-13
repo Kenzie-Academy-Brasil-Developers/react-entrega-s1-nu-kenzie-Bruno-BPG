@@ -1,0 +1,65 @@
+form{
+    background-color: #F8F9FA;
+    height: 225px;
+    width: 100%;
+    border-radius: 4px;    
+}
+
+.divIntermediariaForm{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.ajustarMargin{
+margin-left: 20px;
+}
+
+#descrisao{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: 320px;
+    border-radius: 8px;
+
+}
+
+#caixaInferior{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btnEnviar{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 48px;
+    width: 314px;
+    border-radius: 8px;
+    background-color: #FD377E;
+    color: white;
+}
+
+.totalMoney{
+    margin-top: 16px;
+    background-color: #F8F9FA;
+    height: 96px;
+    width: 360px;
+    border-radius: 4px;    
+}
+
+.divSuperiorTotalMoney{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.paragrafoInferiorTotalMoney{
+    margin-left: 24px;
+}

@@ -4,11 +4,6 @@
     padding: 0px;
 }
 
-body{
-    /* background-color: goldenrod; */
-    background-color: white;
-}
-
 header{
     background-color: #F8F9FA;
     height: 50px;
@@ -23,7 +18,6 @@ header{
 }
 
 .vermelho{
-    /* margin-left: 20px; */
     color: red;
 }
 
@@ -32,25 +26,19 @@ header{
     width: 85px;
     border-radius: 8px;
     cursor: pointer;
-
 }
 
 main{
-    /* background-color: blueviolet; */
     height: 535px;
     display: flex;
-    /* justify-content: space-around; */
     justify-content: space-between;
 }
 
 .lateralEsquerda{
-    /* margin-left: 40px; */
     margin-left: 100px;
 }
 
 .lateralDireita{
-    /* background-color: chocolate; */
-    /* margin-right: 40px; */
     margin-right: 100px;
     margin-left: 40px;
     height: 100%;
@@ -61,78 +49,10 @@ main{
 
 }
 
-form{
-    /* background-color: #E9ECEF; */
-    background-color: #F8F9FA;
-    height: 225px;
-    width: 100%;
-    border-radius: 4px;    
-}
-
-.divIntermediariaForm{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 50px;
-}
-
-.ajustarMargin{
-margin-left: 20px;
-}
-
-#descrisao{
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 30px;
-    width: 320px;
-    border-radius: 8px;
-    /* padding: 0px, 16px, 0px, 16px; */
-
-}
-
-#caixaInferior{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 #selecionarCategoria{
     height: 40px;
     width: 120px;
     border-radius: 8px;
-}
-
-#btnEnviar{
-    cursor: pointer;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 48px;
-    width: 314px;
-    border-radius: 8px;
-    background-color: #FD377E;
-    color: white;
-}
-
-.totalMoney{
-    margin-top: 16px;
-    background-color: #F8F9FA;
-    height: 96px;
-    width: 360px;
-    border-radius: 4px;    
-}
-
-.divSuperiorTotalMoney{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 6px;
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
-.paragrafoInferiorTotalMoney{
-    margin-left: 24px;
 }
 
 .filtroCategoria{
@@ -149,47 +69,4 @@ margin-left: 20px;
     width: 85px;
     border-radius: 8px;
     cursor: pointer;
-}
-
-.conteinerCards{
-    /* background-color: purple; */
-    background-color: #F8F9FA;
-    display: flex;
-    height: 87px;
-    width: 560px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-}
-
-.conteinerCards-lateralDireita{
-    display: flex;
-    /* background-color: black; */
-    width: 150px;
-    justify-content: space-between;
-}
-
-.deletarCard{
-    height: 22px;
-    width: 22px;
-    border-radius: 2.461538553237915px;
-    cursor: pointer;
-
-}
-
-.cardDescrisao{
-    /* background-color: #FD377E; */
-    background-color: white;
-
-}
-
-.cardCategoria{
-    margin-top: 20px;
-    /* background-color: yellowgreen; */
-    max-width: 62px;
-}
-
-.cardValor{
-    /* background-color: aquamarine; */
-    height: 22px;
 }
